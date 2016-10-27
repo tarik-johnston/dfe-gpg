@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-GOV.UK prototype kit
+Login
 {% endblock %}
 
 {% block content %}
@@ -14,9 +14,9 @@ GOV.UK prototype kit
 			<h1 class="heading-xlarge">
 				Sign in
 			</h1>
-			<p>Sign in or <a href="#">create an account</a> to get started.</p>
+			<p>Sign in or <a href="registration	">create an account</a> to get started.</p>
 
-			<form method="post" name="login" action="#" id="login">
+			<form method="get" name="login" action="/gpg-overview" id="login">
 
 				<fieldset>
 					<legend class="visuallyhidden">Sign in</legend>
@@ -24,7 +24,7 @@ GOV.UK prototype kit
 					<div class="form-group ">
 						<label class="form-label" for="email">
 							Email address
-							
+
 						</label>
 						<input type="email" name="email" id="email" class="form-control" >
 					</div>
@@ -32,7 +32,7 @@ GOV.UK prototype kit
 					<div class="form-group ">
 						<label class="form-label" for="password_current">
 							Password
-							
+
 						</label>
 						<input type="password" name="password" id="password_current" class="form-control" value="" autocomplete="off">
 					</div>
