@@ -1,6 +1,6 @@
 {% extends "layout.html" %}
 {% block page_title %}
-GOV.UK prototype kit
+Enter GPG data
 {% endblock %}
 {% block body_classes %}
 add-data
@@ -9,15 +9,15 @@ add-data
 <main id="content" role="main">
 	{% include "includes/phase_banner_alpha.html" %}
 	<h1 class="heading-xlarge">
-		Enter your GPG data for 2017/2018
+		Enter your GPG data for March 2017
 	</h1>
 	<div class="grid-row">
 		<div class="column-two-thirds">
 			<div class="text">
-				<p class="lede">On this page you will submit your GPG data:</p>
+				<p class="lede">Please enter your Gender pay gap data for the period of March 2016 to March 2017:</p>
 			</div>
 			<form method="get" name="registration" action="/signup" id="registration">
-				<h2 class="heading-medium">A. Difference between the mean hourly rate  </h2>
+				<h2 class="heading-medium">1. Difference in mean hourly rate of pay  </h2>
 				<fieldset>
 					<div class="form-group ">
 						<label class="form-label" for="email">
@@ -26,18 +26,20 @@ add-data
 						<input type="email" name="email" id="email" class="form-control" >
 					</div>
 				</fieldset>
-			<!-- 	<details>
-					<summary><span class="summary">Help with nationality</span></summary>
+				<details>
+					<summary><span class="summary">How do I calculate this</span></summary>
 					<div class="panel panel-border-narrow">
 						<p>
-							If you’re not sure about your nationality, try to find out from an official document like a passport or national ID card.
-						</p>
-						<p>
-							We need to know your nationality so we can work out which elections you’re entitled to vote in. If you can’t provide your nationality, you’ll have to send copies of identity documents through the post.
+							The difference between the mean hourly rate of pay of male  employees and that of female  employees must be expressed as a percentage of the mean hourly rate of pay of male  employees and is to be determined as follows:<br>
+							<img src="{{ asset_path }}images/maths.png" width="160" alt=""> 
+							<br>
+							where—<br>
+							A is the mean hourly rate of pay of all male full-pay relevant employees; and<br>
+							B is the mean hourly rate of pay of all female full-pay relevant employees.
 						</p>
 					</div>
-				</details> -->
-				<h2 class="heading-medium">B. Difference between the median hourly rate </h2>
+				</details>
+				<h2 class="heading-medium">2. Difference in median hourly rate of pay </h2>
 				<fieldset>				
 					<div class="form-group ">
 						<label class="form-label" for="password">
@@ -45,10 +47,21 @@ add-data
 						</label>
 						<input type="password" name="password" id="password" class="form-control">
 					</div>
-	
 				</fieldset>
-
-				<h2 class="heading-medium">C. Difference between the mean bonus pay  </h2>
+				<details>
+					<summary><span class="summary">How do I calculate this</span></summary>
+					<div class="panel panel-border-narrow">
+						<p>
+							The difference between the mean hourly rate of pay of male  employees and that of female  employees must be expressed as a percentage of the mean hourly rate of pay of male  employees and is to be determined as follows:<br>
+							<img src="{{ asset_path }}images/maths.png" width="160" alt=""> 
+							<br>
+							where—<br>
+							A is the mean hourly rate of pay of all male full-pay relevant employees; and<br>
+							B is the mean hourly rate of pay of all female full-pay relevant employees.
+						</p>
+					</div>
+				</details>
+				<h2 class="heading-medium">3. Difference in mean bonus pay  </h2>
 				<fieldset>				
 					<div class="form-group ">
 						<label class="form-label" for="password">
@@ -56,10 +69,21 @@ add-data
 						</label>
 						<input type="password" name="password" id="password" class="form-control">
 					</div>
-
-
 				</fieldset>	
-				<h2 class="heading-medium">D. Difference between the median bonus pay</h2>
+				<details>
+					<summary><span class="summary">How do I calculate this</span></summary>
+					<div class="panel panel-border-narrow">
+						<p>
+							The difference between the mean hourly rate of pay of male  employees and that of female  employees must be expressed as a percentage of the mean hourly rate of pay of male  employees and is to be determined as follows:<br>
+							<img src="{{ asset_path }}images/maths.png" width="160" alt=""> 
+							<br>
+							where—<br>
+							A is the mean hourly rate of pay of all male full-pay relevant employees; and<br>
+							B is the mean hourly rate of pay of all female full-pay relevant employees.
+						</p>
+					</div>
+				</details>
+				<h2 class="heading-medium">4. Difference in median bonus pay</h2>
 				<fieldset>				
 					<div class="form-group ">
 						<label class="form-label" for="password">
@@ -67,32 +91,110 @@ add-data
 						</label>
 						<input type="password" name="password" id="password" class="form-control">
 					</div>
-	
 				</fieldset>				
-
-				<h2 class="heading-medium">E. Proportions of male and female relevant employees paid a bonus</h2>
+				<details>
+					<summary><span class="summary">How do I calculate this</span></summary>
+					<div class="panel panel-border-narrow">
+						<p>
+							The difference between the mean hourly rate of pay of male  employees and that of female  employees must be expressed as a percentage of the mean hourly rate of pay of male  employees and is to be determined as follows:<br>
+							<img src="{{ asset_path }}images/maths.png" width="160" alt=""> 
+							<br>
+							where—<br>
+							A is the mean hourly rate of pay of all male full-pay relevant employees; and<br>
+							B is the mean hourly rate of pay of all female full-pay relevant employees.
+						</p>
+					</div>
+				</details>
+				<h2 class="heading-medium">5. Proportion of male and female employees who received bonus pay</h2>
 				<fieldset>				
 					<div class="form-group ">
 						<label class="form-label" for="password">
-							Median bonus pay paid
+							Male median bonus pay paid
 						</label>
 						<input type="password" name="password" id="password" class="form-control">
 					</div>
-	
+					<div class="form-group ">
+						<label class="form-label" for="password">
+							Female median bonus pay paid
+						</label>
+						<input type="password" name="password" id="password" class="form-control">
+					</div>
 				</fieldset>		
-
-				<h2 class="heading-medium">F. Proportions employees in the lower, lower middle, upper middle and upper quartile pay bands </h2>
+				<details>
+					<summary><span class="summary">How do I calculate this</span></summary>
+					<div class="panel panel-border-narrow">
+						<p>
+							The difference between the mean hourly rate of pay of male  employees and that of female  employees must be expressed as a percentage of the mean hourly rate of pay of male  employees and is to be determined as follows:<br>
+							<img src="{{ asset_path }}images/maths.png" width="160" alt=""> 
+							<br>
+							where—<br>
+							A is the mean hourly rate of pay of all male full-pay relevant employees; and<br>
+							B is the mean hourly rate of pay of all female full-pay relevant employees.
+						</p>
+					</div>
+				</details>
+				<h2 class="heading-medium">6. Proportions employees in the lower, lower middle, upper middle and upper quartile pay bands </h2>
+				<h3 class="heading-small">Lower payband</h3>
 				<fieldset>				
 					<div class="form-group ">
 						<label class="form-label" for="password">
-							Pay bands
+							Male
 						</label>
 						<input type="password" name="password" id="password" class="form-control">
 					</div>
-	
+					<div class="form-group ">
+						<label class="form-label" for="password">
+							Female
+						</label>
+						<input type="password" name="password" id="password" class="form-control">
+					</div>
+				</fieldset>	
+				<h3 class="heading-small">Middle payband</h3>	
+				<fieldset>				
+					<div class="form-group ">
+						<label class="form-label" for="password">
+							Male
+						</label>
+						<input type="password" name="password" id="password" class="form-control">
+					</div>
+					<div class="form-group ">
+						<label class="form-label" for="password">
+							Female
+						</label>
+						<input type="password" name="password" id="password" class="form-control">
+					</div>
+				</fieldset>	
+				<h3 class="heading-small">Upper middle payband</h3>	
+				<fieldset>				
+					<div class="form-group ">
+						<label class="form-label" for="password">
+							Male
+						</label>
+						<input type="password" name="password" id="password" class="form-control">
+					</div>
+					<div class="form-group ">
+						<label class="form-label" for="password">
+							Female
+						</label>
+						<input type="password" name="password" id="password" class="form-control">
+					</div>
 				</fieldset>		
-
-				<fieldset>
+				<h3 class="heading-small">Upper quartile payband</h3>	
+				<fieldset>				
+					<div class="form-group ">
+						<label class="form-label" for="password">
+							Male
+						</label>
+						<input type="password" name="password" id="password" class="form-control">
+					</div>
+					<div class="form-group ">
+						<label class="form-label" for="password">
+							Female
+						</label>
+						<input type="password" name="password" id="password" class="form-control">
+					</div>
+				</fieldset>		
+				<!-- <fieldset>
 					<legend class="visuallyhidden">Terms</legend>
 					<div class="form-group ">
 						<label class="block-label" for="terms">
@@ -103,8 +205,10 @@ add-data
 					<div class="form-group">
 						<input type="submit" name="submit" id="signin-form-submit" value="Create account" class="button">
 					</div>
-				</fieldset>
+				</fieldset> -->
 			</form>
+			<p><a class="button" href="summary-preview" role="button">Continue</a></p>
+			<a href="gpg-overview">Cancel</a>
 		</div>
 	</div>
 </main>

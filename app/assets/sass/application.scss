@@ -48,10 +48,25 @@ h2.type-heading {
 }
 
 
+#proposition-links{
+  float:right
+}
 
 
+tr td:nth-child(1) {
+    width:50% !important;
+}
+tr td:nth-child(2) {
+    width:40% !important;
+}
+tr td:nth-child(3) {
+    width:10% !important;
+}
+.row td {
+  border:none
+}
+.indent{
+  padding-left: 24px;
 
-
-
-
+}
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
