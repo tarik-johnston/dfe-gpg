@@ -27,4 +27,31 @@ $path: "/public/images/";
   }
 }
 
+.panel-cta {
+    padding: 15px 15px 30px; 
+    background-color: #dee0e2;
+
+  .flush--top { 
+    font-weight: 700;
+    text-align: center;
+    margin-top: 0 !important;
+  }
+  p {
+    text-align: center; margin-bottom: 0 !important;
+  }
+}
+
+h2.type-heading {
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #bfc1c3;
+}
+
+
+
+
+
+
+
+
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you

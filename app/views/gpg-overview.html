@@ -1,104 +1,68 @@
 {% extends "layout.html" %}
-
 {% block page_title %}
-GOV.UK prototype kit
+Enter GPG data
 {% endblock %}
-
-{% block proposition_header %}
-  <!-- blank to remove the proposition header -->
-{% endblock %}
-
-{% block proposition_header %}
-
+{{ navlinks }}
 {% block content %}
-
 <main id="content" role="main">
 	{% include "includes/phase_banner_alpha.html" %}
+	<h1 class="heading-xlarge">
+		Your GPG data 
+	</h1>
 	<div class="grid-row">
 		<div class="column-two-thirds">
-
-			<h1 class="heading-xlarge">
-				Create an account 
-			</h1>
-			<p class="lede">You need to enter your email address and create a password. This will allow you to submit, view and retrieve GPG data.</p>
-
-			<p>If you already have an account, please <a href="login">sign in</a>.</p>
-
-			<form method="post" name="registration" action="/signup" id="registration">
-				
-
-				<h2 class="heading-medium">Email address</h2>
-
-				<fieldset>
-					<legend class="visuallyhidden">Email</legend>
-
-					<div class="form-group ">
-						<label class="form-label" for="email">
-							Enter your email address
-
-						</label>
-						<input type="email" name="email" id="email" class="form-control" >
-					</div>
-
-					<div class="form-group ">
-						<label class="form-label" for="email_confirm">
-							Confirm your email address
-
-						</label>
-						<input type="email" name="email" id="email" class="form-control" >
-
-					</div>
-				</fieldset>
-
-				<h2 class="heading-medium">Create password</h2>
-
-				<fieldset>
-					<legend class="visuallyhidden">Password</legend>
-					<div class="text">
-						<p>Your password has to be at least 8 characters long and must contain at least 1 lower-case letter, 1 capital letter and 1 number. Never share your password with anyone.</p>
-					</div>
-
-					<div class="form-group ">
-						<label class="form-label" for="password">
-							Password
-
-						</label>
-						<input type="password" name="password" id="password" class="form-control">
-					</div>
-
-					<div class="form-group ">
-						<label class="form-label" for="password_confirm">
-							Confirm password
-
-						</label>
-						<input type="password" name="password_confirm" id="password_confirm" class="form-control">
-					</div>
-				</fieldset>
-
-				<fieldset>
-					<legend class="visuallyhidden">Terms</legend>
-			
-
-					<div class="form-group ">
-						<label class="block-label" for="terms">
-							<input type="checkbox" name="terms" id="terms" value="1">
-							I agree to the <a href="/terms-and-conditions" target="_blank">terms and conditions</a>
-
-						</label>
-					</div>
-
-					<div class="form-group">
-						<input type="submit" name="submit" id="signin-form-submit" value="Create account" class="button">
-					</div>
-				</fieldset>
-
-			</form>
-
-
+			<div class="text">
+				<p class="lede">On this page you'll find all the GPG data that you've submitted. As well as being able to submit a new GPGs, you can:</p>
+				<ul class="list list-bullet">
+					<li>Amend your GPG data</li>
+					<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+					</li>
+					<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+					</li>
+				</ul>    
+			</div>
 		</div>
+		<div class="column-one-third">
+			<div class="panel-cta tablet-and-up" style=''>
+				<p class="heading-medium panel-body flush--top">Enter your GPG data for 2017/2018</p>
+				<p class="panel-button flush--bottom">
+					<a id="create-new-lpa" class="button" href="add-data" role="button">Start now</a>
+				</p> 
+			</div>
+		</div>
+	</div>	
+	<div class="grid-row">
+		<div class="column-full">		
+			<h2 class="heading-large type-heading">
+			Historic submissions
+		</h2>
+		<table>
+			<thead>
+				<tr>
+					<th scope="col">Date</th>
+					<th class="numeric" scope="col">Gap 1</th>
+					<th class="numeric" scope="col">Gap 2</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>25 March 2015 to 25 March 2016</td>
+					<td class="numeric">45%</td>
+					<td class="numeric">26%</td>
+				</tr>
+				<tr>
+					<td>25 March 2014 to 25 March 2015</td>
+					<td class="numeric">35%</td>
+					<td class="numeric">40%</td>
+				</tr>
+				<tr>
+					<td>25 March 2013 to 25 March 2014</td>
+					<td class="numeric">55%</td>
+					<td class="numeric">55%</td>
+				</tr>
+			</tbody>
+		</table>
 	</div>
+</div>
 </main>
-
 {% endblock %}
-
-
