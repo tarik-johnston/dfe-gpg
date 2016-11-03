@@ -62,29 +62,52 @@ h2.type-heading {
 
 
 
-.related {border-top:10px solid #005ea5;padding-top:5px;
-list-style: none;
-padding: 0;
-font-family: "nta", Arial, sans-serif;
-font-size: 16px;
-line-height: 1.25;
-font-weight: 300;
-text-transform: none
-
+#global-nav {
+    border-bottom: 1px solid #bfc1c3;
+    overflow: hidden;
 }
 
-.related nav{margin-bottom:1.25em}
+#global-nav nav {
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: 400;
+    text-transform: none;
+}
 
-.related li a {
-    background-position: 0 -287px;
-    background-repeat: no-repeat;
-    display: block;
-    line-height: 1.25em;
-    orphans: 2;
+#global-nav #navigation {
+    float: right;
 }
-.related li {
-    margin-bottom: 0.75em;
-    padding-left: 0;
+
+#global-nav .lastsigned {
+    float: left;
+    padding: 10px 8px;
 }
+
+.flush--ends {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+#global-nav nav a, #global-nav nav .user {
+    padding: 10px 8px;
+}
+
+#global-nav nav li {
+    display: inline;
+}
+
+#global-nav nav a {
+    display: inline-block;
+}
+#global-nav nav a, #global-nav nav .user {
+    padding: 10px 8px;
+}
+
+.govuk-box-highlight{
+padding: 1em 1em;
+}
+
+
+
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
