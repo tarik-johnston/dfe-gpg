@@ -1,2 +1,2 @@
-# DFE Prototype kit
+# DFE GPG Prototype kit
 
